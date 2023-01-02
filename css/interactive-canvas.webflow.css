@@ -1,0 +1,116 @@
+.bgi {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: red;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #fff, rgba(162, 0, 0, 0));
+}
+
+.centeri {
+  width: 50%;
+  height: 65%;
+  background-image: url('../images/gallery-current-dim-1.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: saturate(200%) contrast(200%);
+  filter: saturate(200%) contrast(200%);
+  outline-color: #000;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 2px;
+  cursor: pointer;
+}
+
+.button {
+  position: fixed;
+  left: 20px;
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ff0b0b;
+  outline-color: #000;
+  outline-offset: 0px;
+  outline-style: solid;
+  outline-width: 2px;
+  cursor: pointer;
+}
+
+.background {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, #000, red);
+}
+
+.center-container {
+  width: 600px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  cursor: pointer;
+  mix-blend-mode: luminosity;
+}
+
+.pop {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: red;
+  mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 991px) {
+  .centeri {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pop {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .centeri {
+    width: 90%;
+    height: 40%;
+  }
+}
